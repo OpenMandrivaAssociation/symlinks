@@ -9,7 +9,6 @@ URL:		http://www.ibiblio.org/pub/Linux/utils/file/
 Patch0:		%{name}-1.2-noroot.patch
 Patch1:		%{name}-1.2-static.patch
 Buildrequires:	glibc-static-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}--buildroot
 
 %description
 The symlinks utility performs maintenance on symbolic links.  Symlinks
