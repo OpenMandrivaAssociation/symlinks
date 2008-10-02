@@ -6,8 +6,9 @@ Group:		File tools
 License:	BSD-style
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.bz2
 URL:		http://www.ibiblio.org/pub/Linux/utils/file/
-Patch0:		%{name}-1.2-noroot.patch
-Patch1:		%{name}-1.2-static.patch
+Patch0:		symlinks-1.2-noroot.patch
+Patch1:		symlinks-1.2-static.patch
+Patch2:		symlinks-1.2-short.patch
 Buildrequires:	glibc-static-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
@@ -22,8 +23,9 @@ symlinks on your system.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch0 -p1 -b .noroot
 %patch1 -p1 -b .static
+%patch2 -p1 -b .short
 
 %build
 %make CFLAGS="%{optflags} -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
