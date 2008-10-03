@@ -28,7 +28,7 @@ symlinks on your system.
 %patch2 -p1 -b .short
 
 %build
-%make CFLAGS="%{optflags} -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+%make CFLAGS="%{optflags} -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64" 
 
 %install
 rm -rf %{buildroot}
