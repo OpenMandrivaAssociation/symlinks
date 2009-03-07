@@ -1,7 +1,7 @@
 Summary:	A utility which maintains a system's symbolic links
 Name:		symlinks
 Version:	1.2
-Release:	%mkrel 21
+Release:	%mkrel 22
 Group:		File tools
 License:	BSD-style
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.bz2
