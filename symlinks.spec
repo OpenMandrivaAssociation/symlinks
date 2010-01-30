@@ -7,7 +7,6 @@ License:	BSD-style
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
 URL:		http://www.ibiblio.org/pub/Linux/utils/file/
 Patch0:		symlinks-1.4-noroot.patch
-Patch1:		symlinks-1.2-static.patch
 Patch2:		symlinks-1.2-short.patch
 Buildrequires:	glibc-static-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -24,7 +23,6 @@ symlinks on your system.
 %prep
 %setup -q
 %patch0 -p1 -b .noroot
-%patch1 -p1 -b .static
 %patch2 -p1 -b .short
 
 %build
