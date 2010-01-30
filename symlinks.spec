@@ -8,7 +8,6 @@ Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
 URL:		http://www.ibiblio.org/pub/Linux/utils/file/
 Patch0:		symlinks-1.4-noroot.patch
 Patch2:		symlinks-1.4-short.patch
-Buildrequires:	glibc-static-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -32,7 +31,7 @@ symlinks on your system.
 rm -rf %{buildroot}
 
 install -D %{name} %{buildroot}%{_bindir}/%{name}
-install -D %{name}.8  %{buildroot}%{_mandir}/man8/%{name}.8
+install -D %{name}.8 %{buildroot}%{_mandir}/man8/%{name}.8
 
 %clean
 rm -rf %{buildroot}
