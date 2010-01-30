@@ -21,8 +21,8 @@ symlinks on your system.
 
 %prep
 %setup -q
-%patch0 -p1 -b .noroot
-%patch2 -p1 -b .short
+%patch0 -p1 -b .noroot~
+%patch2 -p1 -b .short~
 
 %build
 %make CFLAGS="%{optflags} -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64" 
