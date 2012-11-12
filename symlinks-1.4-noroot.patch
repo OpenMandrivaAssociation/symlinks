@@ -1,0 +1,14 @@
+diff -p -up symlinks-1.4/Makefile.noroot symlinks-1.4/Makefile
+--- symlinks-1.4/Makefile.noroot	2010-01-30 17:42:25.191345745 -0500
++++ symlinks-1.4/Makefile	2010-01-30 17:43:14.875787476 -0500
+@@ -8,8 +8,8 @@ symlinks: symlinks.c
+ 	$(CC) -Wall -Wstrict-prototypes -O2 ${CFLAGS} -o symlinks symlinks.c
+  
+ install: all symlinks.8
+-	install -m 755 -o root -g root symlinks /usr/local/bin
+-	install -m 644 -o root -g root symlinks.8 /usr/local/man/man8
++	install -m 755   symlinks /usr/local/bin
++	install -m 644   symlinks.8 /usr/local/man/man8
+ 
+ clean:
+ 	rm -f symlinks *.o core

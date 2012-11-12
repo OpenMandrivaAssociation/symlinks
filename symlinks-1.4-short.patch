@@ -1,0 +1,11 @@
+diff -p -up symlinks-1.4/symlinks.c.short symlinks-1.4/symlinks.c
+--- symlinks-1.4/symlinks.c.short	2010-01-30 17:46:28.466470538 -0500
++++ symlinks-1.4/symlinks.c	2010-01-30 17:46:41.676098850 -0500
+@@ -235,6 +235,7 @@ static void fix_symlink (char *path, dev
+ 		/* now create new, with "../"s followed by tail */
+ 		np = new;
+ 		while (*p) {
++	shorten_path(new, path);
+ 			if (*p++ == '/') {
+ 				*np++ = '.';
+ 				*np++ = '.';
