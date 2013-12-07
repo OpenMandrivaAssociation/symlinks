@@ -1,7 +1,7 @@
 Summary:	A utility which maintains a system's symbolic links
 Name:		symlinks
 Version:	1.4
-Release:	7
+Release:	8
 Group:		File tools
 License:	BSD-style
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
