@@ -5,7 +5,7 @@ Release:	14
 Group:		File tools
 License:	BSD-style
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
-URL:		http://www.ibiblio.org/pub/Linux/utils/file/
+URL:		https://www.ibiblio.org/pub/Linux/utils/file/
 Patch0:		symlinks-1.4-noroot.patch
 Patch2:		symlinks-1.4-short.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
